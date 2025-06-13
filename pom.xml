@@ -11,6 +11,7 @@
 
     <modules>
         <module>fizzbuzz-simple</module>
+        <module>fizzbuzz-hexa</module>
     </modules>
 
     <properties>
