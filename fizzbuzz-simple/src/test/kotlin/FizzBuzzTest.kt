@@ -1,4 +1,3 @@
-import de.cfranzen.kata.fizzbuzz.FizzBuzz
 import org.assertj.core.api.Assertions.assertThat
 import kotlin.test.Test
 
