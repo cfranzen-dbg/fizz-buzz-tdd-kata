@@ -5,3 +5,4 @@ Implement a function that takes an integer `n` as input and does the following t
 * if the Buzz database contains `n`, it should return 'Buzz'
 * if both conditions are true for `n`, it should return 'FizzBuzz'
 * else it should return the number as a string
+The application is called via CLI and should write the result to std-out
