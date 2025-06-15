@@ -41,4 +41,16 @@ class CliAdapterTest {
         assertThat(outStream.toString()).isEmpty()
         verify { usecase wasNot called }
     }
+
+    @Test
+    fun throwOnMissingArgment() {
+        val expectedResult = "This is a string that cannot be produced by the domain logic"
+        val args = emptyArray<String>()
+        every { usecase.convert(any()) } returns expectedResult
+
+        assertThrows<ArrayIndexOutOfBoundsException> { sut.invoke(args) }
+
+        assertThat(outStream.toString()).isEmpty()
+        verify { usecase wasNot called }
+    }
 }
